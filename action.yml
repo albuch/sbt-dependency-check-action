@@ -1,0 +1,17 @@
+name: 'sbt-dependency-check'
+description: 'Github action to execute sbt-dependency-check as part of a github workflow'
+author: 'albuch'
+branding:
+  icon: 'shield'
+  color: 'red'
+inputs:
+  jsonReportPath:
+    description: 'Path to the json report of sbt-dependency-check'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.jsonReportPath }}
+
