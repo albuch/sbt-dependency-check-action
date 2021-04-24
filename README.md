@@ -1,6 +1,6 @@
 # sbt-dependency-check-action
 
-A Github Action to parse DependencyCheck JSONB reports, print the found vulnerabilities 
+A Github Action to parse DependencyCheck JSON reports, print the found vulnerabilities 
 and fail the build if a vulnerability was found.
 
 ## Usage
