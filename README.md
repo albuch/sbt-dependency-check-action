@@ -21,7 +21,7 @@ jobs:
       - name: DependencyCheck
         run: sbt -v -Dfile.encoding=UTF-8 dependencyCheck
       - name: Print DependencyCheck Result
-        uses: albuch/sbt-dependency-check-action@v1
+        uses: albuch/sbt-dependency-check-action@v1.0
         with:
           jsonReportPath: "target/scala-2.12/sbt-1.0/dependency-check-report.json"
 ```
